@@ -1,0 +1,54 @@
+{
+  "version": "0.1.0",
+  "scope": "Construction of the manual debugger and representative diagnostic dry run. Live repairs require a separately scoped current invocation.",
+  "checks": [
+    {
+      "id": "check-01",
+      "expected": "Manual debugger scopes the current symptom, project/chat identity, expected versus actual behavior and repair authority before execution.",
+      "method": "Compare the current user request and manual-mode answer against AGENT, playbook, config, invocation and case responses.",
+      "required": true
+    },
+    {
+      "id": "check-02",
+      "expected": "Diagnosis distinguishes reproduced causes from hypotheses; a repair requires the original failure to pass and a relevant regression to remain correct.",
+      "method": "Execute installed maintenance-classifier examples and source-matched isolated checkpoint tests; inspect the investigation report and repair gates.",
+      "required": true
+    },
+    {
+      "id": "check-03",
+      "expected": "A legitimate low-usage stop persists after healthy readings until explicit reviewed resume, and normal recovery is distinguished from a reserve grant.",
+      "method": "Run the existing healthy-reading/persistent-stop regression and reproduce prepare-review without a grant in an isolated fixture; inspect live state without mutations.",
+      "required": true
+    },
+    {
+      "id": "check-04",
+      "expected": "Foreign or unknown task identity, uncertain jobs and stale evidence do not supply resume or repair authority.",
+      "method": "Review fixed adversarial cases against task-checkpoint scope, ownership and telemetry source contracts.",
+      "required": true
+    },
+    {
+      "id": "check-05",
+      "expected": "Building the agent changes no live hook, checkpoint, ownership or account configuration; no background job, cross-chat message or paid execution is launched.",
+      "method": "Compare protected live-state hashes before and after validation, inspect tool receipts and zero-worker configuration.",
+      "required": true
+    },
+    {
+      "id": "check-06",
+      "expected": "Every durable package asset is indexed and every applicable review check records id, expected, method, status, evidence and observed.",
+      "method": "Run Agent Forge readiness audit and independently inspect inventory, criterion snapshots and review fields.",
+      "required": true
+    },
+    {
+      "id": "check-07",
+      "expected": "A first-case report provides verified observations, a useful next action and clear limits; prior-chat claims do not become current runtime proof.",
+      "method": "Compare report claims with current maintenance/status, on-disk hook/config readback, source and deterministic reproduction.",
+      "required": true
+    },
+    {
+      "id": "check-08",
+      "expected": "Evidence-supported corrections are saved in the operating playbook and affected checks are rerun without altering frozen acceptance.",
+      "method": "Verify saved lesson text/hash and compare acceptance SHA256 before and after isolated checks.",
+      "required": true
+    }
+  ]
+}

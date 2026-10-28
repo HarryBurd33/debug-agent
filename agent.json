@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "project_id": "debug-agent",
+  "status": "draft",
+  "instructions": "AGENT.md",
+  "playbook": "PLAYBOOK.md",
+  "toolbox": "toolbox/index.json",
+  "execution": {
+    "mode": "manual",
+    "trigger": "Explicit current manual invocation",
+    "timezone": null,
+    "dependencies": [],
+    "ordering": "serial",
+    "overlap_policy": "single-active-interactive-writer; no overlapping unattended execution",
+    "retry_policy": "reconcile-before-retry; stop repeated identical failure",
+    "stop_conditions": [
+      "authority or host capability missing",
+      "30 minute or three attempt case budget exhausted",
+      "active owner conflict or uncertain operation",
+      "required acceptance check unavailable",
+      "current applicable resource stop"
+    ],
+    "notification": "Progress and final results in invoking chat",
+    "registration": {
+      "provider": null,
+      "id": null,
+      "status": "unregistered",
+      "verified_at": null,
+      "evidence": []
+    }
+  },
+  "bounds": {
+    "max_attempts": 3,
+    "max_minutes": 30,
+    "max_depth": 0,
+    "max_concurrency": 0,
+    "max_workers": 0,
+    "max_cost_usd": 0
+  },
+  "capabilities": {
+    "required": [
+      "artifact-read-write",
+      "resource-search",
+      "outcome-validation",
+      "code-execution"
+    ],
+    "optional": [
+      "native-chat-metadata",
+      "git-inspection",
+      "native-hook-delivery",
+      "target-source-write",
+      "live-installation"
+    ],
+    "observed": [],
+    "missing": []
+  },
+  "authority": {
+    "source": "Current scoped user invocation; saved configuration grants no permission.",
+    "allowed": [
+      "Inspect selected accessible targets and make necessary reversible repairs within current authority."
+    ],
+    "escalate": [
+      "Unknown ownership, uncertain effects, missing access or verification"
+    ],
+    "external_actions": [
+      "Require current explicit authority for messaging, installation, publication and scheduling."
+    ]
+  },
+  "retention": {
+    "temporary_dirs": [
+      "scratch"
+    ],
+    "temporary_days": 7,
+    "durable": "Retain run reviews, diagnosis outputs, source hashes and evidence until explicit supersession/deletion policy; no automatic cleanup."
+  }
+}

@@ -1,0 +1,9 @@
+runs/
+outputs/
+scratch/
+.checkpoint/
+.private/
+__pycache__/
+*.pyc
+.env
+.env.*

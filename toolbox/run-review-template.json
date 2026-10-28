@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "project_id": "debug-agent",
+  "run_id": "set-at-invocation",
+  "run_key": "workflow:input-version:trigger-occurrence",
+  "status": "planned",
+  "started_at": null,
+  "finished_at": null,
+  "authorization": {
+    "source": null,
+    "scope": []
+  },
+  "versions": {
+    "playbook": null,
+    "config": null,
+    "toolbox": null,
+    "acceptance_snapshot": null
+  },
+  "inputs": [],
+  "resource_searches": [],
+  "reuse_decisions": [],
+  "outputs": [],
+  "checks": [
+    {
+      "id": "bug-original",
+      "expected": "Set exact user-visible expected behavior before execution",
+      "method": "Reproduce the original trigger against original and corrected source",
+      "status": "not_run",
+      "evidence": [],
+      "observed": null
+    },
+    {
+      "id": "bug-regression",
+      "expected": "Set adjacent valid/invalid behavior from independent source or user example",
+      "method": "Execute a relevant regression independent of the patch",
+      "status": "not_run",
+      "evidence": [],
+      "observed": null
+    },
+    {
+      "id": "bug-preservation",
+      "expected": "Record user data, real stops and ownership that must remain correct",
+      "method": "Compare actual state and relevant negative cases",
+      "status": "not_run",
+      "evidence": [],
+      "observed": null
+    },
+    {
+      "id": "bug-runtime",
+      "expected": "Set runtime/installation observation required for this particular completion claim",
+      "method": "Read back installed version and observe actual requested runtime, or label unavailable/not applicable with reason",
+      "status": "not_run",
+      "evidence": [],
+      "observed": null
+    }
+  ],
+  "attempts": [],
+  "repairs": [],
+  "delegations": [],
+  "side_effects": [],
+  "automation_observation": {
+    "provider": null,
+    "id": null,
+    "status": "unregistered",
+    "verified_at": null,
+    "evidence": []
+  },
+  "usage": {
+    "elapsed_minutes": null,
+    "api_cost_usd": null,
+    "tokens": null
+  },
+  "limitations": [],
+  "next_action": null
+}

@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "project_id": "debug-agent",
+  "resources": [
+    {
+      "id": "gitignore",
+      "purpose": "Reusable debugging resource .gitignore",
+      "kind": "reference",
+      "location": ".gitignore",
+      "version": "sha256:b3bea60e1d9c8b50ffb1ebc104cbcd841ce10e60f71dadedc0d0a54e369dc7a4",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "agent-md",
+      "purpose": "Reusable debugging resource AGENT.md",
+      "kind": "reference",
+      "location": "AGENT.md",
+      "version": "sha256:8d472c169bd9d9d7151783c0f6f0e6ed8a18cedf21e78d6f79ce353e6e2fb8ca",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "playbook-md",
+      "purpose": "Reusable debugging resource PLAYBOOK.md",
+      "kind": "reference",
+      "location": "PLAYBOOK.md",
+      "version": "sha256:df10d7d8304a12d1e3ad1c2240df7abe34b29a92f48dbb28b43324419cc41240",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "readme-md",
+      "purpose": "Reusable debugging resource README.md",
+      "kind": "reference",
+      "location": "README.md",
+      "version": "sha256:726f9e8ce7875489ff6d5ed812b9860c3496674f18aac8ed0e615006ef9d1919",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "validation-md",
+      "purpose": "Reusable debugging resource VALIDATION.md",
+      "kind": "reference",
+      "location": "VALIDATION.md",
+      "version": "sha256:5c6ed331017518c9270fb3751918e81c0ac57b9382d27599d49732cf159879e3",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "adapters-codex-md",
+      "purpose": "Reusable debugging resource adapters/codex.md",
+      "kind": "reference",
+      "location": "adapters/codex.md",
+      "version": "sha256:665e2cc6bb68896a89ad470e8b34ff52428147a5d270ef1aefcbe68a797a2875",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "agent-json",
+      "purpose": "Reusable debugging resource agent.json",
+      "kind": "reference",
+      "location": "agent.json",
+      "version": "sha256:3f6f2bac27e413f2d5dadb2d72328bc59d2aa5a697fe2567743bd4f743f32c3e",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "toolbox-acceptance-json",
+      "purpose": "Reusable debugging resource toolbox/acceptance.json",
+      "kind": "reference",
+      "location": "toolbox/acceptance.json",
+      "version": "sha256:286b8b88072a7f00b451820fdddcf8f31a020fa06cbbe40aade8052e695aecf4",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "toolbox-cases-json",
+      "purpose": "Reusable debugging resource toolbox/cases.json",
+      "kind": "reference",
+      "location": "toolbox/cases.json",
+      "version": "sha256:333c62251c29bbff321a3d1c3a43e90ecd3dfee8ef43a6debb17903667523153",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "toolbox-run-review-template-json",
+      "purpose": "Reusable debugging resource toolbox/run-review-template.json",
+      "kind": "reference",
+      "location": "toolbox/run-review-template.json",
+      "version": "sha256:57eeb5f773cbf67d4a74e8ce845c2cabb203f17a137d10795f1667e87867d35d",
+      "input_contract": "Current scoped request and target evidence",
+      "output_contract": "Reusable method or template; no standing authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Portable export inspection",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Adapted indexed working resource; private run data excluded."
+    },
+    {
+      "id": "toolbox-index",
+      "purpose": "Reusable resource inventory",
+      "kind": "index",
+      "location": "toolbox/index.json",
+      "version": "0.1.3",
+      "input_contract": "Reusable assets",
+      "output_contract": "Searchable inventory",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Inventory check",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Regenerated because the original index includes private run data."
+    }
+  ]
+}
