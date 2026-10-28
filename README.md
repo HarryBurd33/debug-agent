@@ -29,3 +29,7 @@ This repository contains reusable instructions/templates. Private incident
 records, account settings, chat identifiers, project backups and machine-specific
 scripts are excluded. It contains no checkpoint runtime and installs no global
 skill, background service or schedule. See VALIDATION.md for verification limits.
+
+## License
+
+[MIT](LICENSE), copyright 2026 HarryBurd33.

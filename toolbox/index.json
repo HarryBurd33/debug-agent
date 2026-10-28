@@ -73,7 +73,7 @@
       "purpose": "Reusable debugging resource README.md",
       "kind": "reference",
       "location": "README.md",
-      "version": "sha256:726f9e8ce7875489ff6d5ed812b9860c3496674f18aac8ed0e615006ef9d1919",
+      "version": "sha256:17c6eabd4eb8eaced9f228fd93c84c72bcde7490185d5b31e9c658917f3cb624",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -95,7 +95,7 @@
       "purpose": "Reusable debugging resource VALIDATION.md",
       "kind": "reference",
       "location": "VALIDATION.md",
-      "version": "sha256:5c6ed331017518c9270fb3751918e81c0ac57b9382d27599d49732cf159879e3",
+      "version": "sha256:205a5947aeb3c2a4495fe35f8dcbcc559ddad753a41e2003cb004b7c6898b24e",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -243,6 +243,28 @@
       },
       "replaces": null,
       "reuse_decision": "Regenerated because the original index includes private run data."
+    },
+    {
+      "id": "license",
+      "purpose": "MIT reuse and distribution terms",
+      "kind": "license",
+      "location": "LICENSE",
+      "version": "sha256:747b45fb70bbc46628a8a6b642f3c1283899f54b16f83398b527d96492d364ae",
+      "input_contract": "Reuse or distribution of this package",
+      "output_contract": "MIT permission, notice and warranty terms",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Standard MIT text inspected",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Searched inventory; no existing license was present. User explicitly requested MIT."
     }
   ]
 }
