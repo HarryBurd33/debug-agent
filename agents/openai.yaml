@@ -1,0 +1,3 @@
+interface:
+  display_name: "Debug Agent"
+  short_description: "Diagnose bugs, repair causes, verify regressions"

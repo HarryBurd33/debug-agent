@@ -8,3 +8,12 @@ automated model-behavior trials. Verify tools, source and native behavior for ea
 actual repair. Pattern scans cannot certify arbitrary content secret-free.
 
 The public package includes an MIT license and a complete reusable-file inventory.
+
+## Installable package
+
+The root SKILL.md and agents/openai.yaml are copied from the user-scoped skill
+whose native Codex discovery was previously verified from two unrelated folders.
+The documented clone layout is checked in a temporary installation, including
+required resources, local Markdown links, JSON parsing and a fast-forward update.
+The Windows instructions use the same directory layout; native Windows execution
+was not tested here. This packaging check does not run a debugging model task.

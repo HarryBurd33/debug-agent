@@ -73,7 +73,7 @@
       "purpose": "Reusable debugging resource README.md",
       "kind": "reference",
       "location": "README.md",
-      "version": "sha256:17c6eabd4eb8eaced9f228fd93c84c72bcde7490185d5b31e9c658917f3cb624",
+      "version": "sha256:48e86831daef1e3a74eec6352cbe39a135d3c461dab0551a2c3f70bc747f644b",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -95,7 +95,7 @@
       "purpose": "Reusable debugging resource VALIDATION.md",
       "kind": "reference",
       "location": "VALIDATION.md",
-      "version": "sha256:205a5947aeb3c2a4495fe35f8dcbcc559ddad753a41e2003cb004b7c6898b24e",
+      "version": "sha256:7e9ebe007186b76a3b69e6cf07ba421b35d35e1c20925a633744b7d16bfc1755",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -265,6 +265,50 @@
       },
       "replaces": null,
       "reuse_decision": "Searched inventory; no existing license was present. User explicitly requested MIT."
+    },
+    {
+      "id": "skill-entry",
+      "purpose": "Globally discoverable skill entry point",
+      "kind": "instructions",
+      "location": "SKILL.md",
+      "version": "sha256:8de56943177fd4003abbba1d57d21939d34bdef881241bd1b5563addf98b50ea",
+      "input_contract": "Current scoped debugging invocation",
+      "output_contract": "Routes to the portable debugging procedure",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Exact reuse of natively discovered global skill entry point and package layout check",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Reused the existing globally installed entry point instead of creating another skill contract."
+    },
+    {
+      "id": "skill-interface",
+      "purpose": "Codex skill display metadata",
+      "kind": "instructions",
+      "location": "agents/openai.yaml",
+      "version": "sha256:d8f846081306c26b62aac59859d371873568f3485647d3114d12dff965cbdb96",
+      "input_contract": "Current scoped debugging invocation",
+      "output_contract": "Routes to the portable debugging procedure",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-01"
+      ],
+      "validation": {
+        "method": "Exact reuse of natively discovered global skill entry point and package layout check",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Reused the existing globally installed entry point instead of creating another skill contract."
     }
   ]
 }
