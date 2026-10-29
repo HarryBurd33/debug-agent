@@ -29,7 +29,7 @@
       "purpose": "Reusable debugging resource AGENT.md",
       "kind": "reference",
       "location": "AGENT.md",
-      "version": "sha256:8d472c169bd9d9d7151783c0f6f0e6ed8a18cedf21e78d6f79ce353e6e2fb8ca",
+      "version": "sha256:d281645cc32da3f7aed3109bffa91f0d369088190dffd4480e3525fa5168e8df",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -51,7 +51,7 @@
       "purpose": "Reusable debugging resource PLAYBOOK.md",
       "kind": "reference",
       "location": "PLAYBOOK.md",
-      "version": "sha256:df10d7d8304a12d1e3ad1c2240df7abe34b29a92f48dbb28b43324419cc41240",
+      "version": "sha256:ca957cc35fce15153da94796d33d5d04401b4abed8e097e4394e482d7fca7565",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -73,7 +73,7 @@
       "purpose": "Reusable debugging resource README.md",
       "kind": "reference",
       "location": "README.md",
-      "version": "sha256:48e86831daef1e3a74eec6352cbe39a135d3c461dab0551a2c3f70bc747f644b",
+      "version": "sha256:08728e961088c4cebbb44a570c1f199baf819c0cae64fcf4a4b8da5ccfa7ccf3",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -95,7 +95,7 @@
       "purpose": "Reusable debugging resource VALIDATION.md",
       "kind": "reference",
       "location": "VALIDATION.md",
-      "version": "sha256:7e9ebe007186b76a3b69e6cf07ba421b35d35e1c20925a633744b7d16bfc1755",
+      "version": "sha256:6fb0b92d9aa4938257814052b8ffb0fb4965c9136f5521c71745fcd25f4798ba",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -117,7 +117,7 @@
       "purpose": "Reusable debugging resource adapters/codex.md",
       "kind": "reference",
       "location": "adapters/codex.md",
-      "version": "sha256:665e2cc6bb68896a89ad470e8b34ff52428147a5d270ef1aefcbe68a797a2875",
+      "version": "sha256:dc2a47a4d4015e895cf78e0ce10494207bfbd1649d4560e93e0b07af21ecc171",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -183,7 +183,7 @@
       "purpose": "Reusable debugging resource toolbox/cases.json",
       "kind": "reference",
       "location": "toolbox/cases.json",
-      "version": "sha256:333c62251c29bbff321a3d1c3a43e90ecd3dfee8ef43a6debb17903667523153",
+      "version": "sha256:40a48fcdeb55b1c69508328e7d951e48decce4afe35f3a2bd441eb1b86d1def5",
       "input_contract": "Current scoped request and target evidence",
       "output_contract": "Reusable method or template; no standing authority",
       "dependencies": [],
@@ -227,7 +227,7 @@
       "purpose": "Reusable resource inventory",
       "kind": "index",
       "location": "toolbox/index.json",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "input_contract": "Reusable assets",
       "output_contract": "Searchable inventory",
       "dependencies": [],
@@ -271,7 +271,7 @@
       "purpose": "Globally discoverable skill entry point",
       "kind": "instructions",
       "location": "SKILL.md",
-      "version": "sha256:8de56943177fd4003abbba1d57d21939d34bdef881241bd1b5563addf98b50ea",
+      "version": "sha256:95b126888f87cf36e835dc90ae36ab5736f46e87972ba813640d0721cddb9848",
       "input_contract": "Current scoped debugging invocation",
       "output_contract": "Routes to the portable debugging procedure",
       "dependencies": [],
@@ -309,6 +309,30 @@
       },
       "replaces": null,
       "reuse_decision": "Reused the existing globally installed entry point instead of creating another skill contract."
+    },
+    {
+      "id": "checkpoint-version-compatibility",
+      "purpose": "Select the installed checkpoint recovery contract and distinguish quota limits from human holds",
+      "kind": "reference",
+      "location": "toolbox/checkpoint-compatibility.md",
+      "version": "sha256:4334493885ed25191acf1ca31b0f0a19b37a86cfd609460626d115e7518bfa39",
+      "input_contract": "Current user authority, installed version, selected observations and ownership",
+      "output_contract": "Version-specific diagnosis; no new permissions or resumption authority",
+      "dependencies": [],
+      "status": "validated",
+      "used_by": [
+        "step-02",
+        "step-05",
+        "step-06"
+      ],
+      "validation": {
+        "method": "Source-contract comparison, JSON/inventory/link/frontmatter checks",
+        "evidence": [
+          "VALIDATION.md"
+        ]
+      },
+      "replaces": null,
+      "reuse_decision": "Retain historical 0.7 cases while adding the current 0.8 contract."
     }
   ]
 }

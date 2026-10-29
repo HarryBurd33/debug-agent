@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "kind": "coordinator-authored adversarial examples and source review, not independent model trials",
   "source_oracles": [
     "Generic authored examples; compare with current target source."
@@ -8,7 +8,7 @@
     {
       "id": "case-01",
       "input": "Pause remains after quota recovers",
-      "expected": "Diagnose persistent-stop policy separately from recovery tooling. Reproduce normal-review and grant preconditions; do not clear the stop.",
+      "expected": "Read the installed contract first. For 0.7 distinguish its persistent-stop policy from recovery tooling. For 0.8 verify direct continuation without recreating a quota pause; retain independent human holds and ownership.",
       "check": "check-03",
       "status": "authored-example"
     },
@@ -22,7 +22,7 @@
     {
       "id": "case-03",
       "input": "Unrelated chat is paused in a shared root",
-      "expected": "Verify current host session identity and authoritative explicit unrelated map. Preserve actual task stops and ownership; unknown identity stays conservative.",
+      "expected": "Verify actual task/chat association and installed version. For 0.8, an old quota-stop marker must not restrict unrelated ordinary tools; preserve real human holds, permissions and foreign ownership.",
       "check": "check-04",
       "status": "authored-example"
     },
@@ -87,6 +87,13 @@
       "input": "Focused source patch passes before/after checks but installation is not done",
       "expected": "Deliver staged patch and evidence, say not installed, and identify exact remaining native/installation check.",
       "check": "check-02",
+      "status": "authored-example"
+    },
+    {
+      "id": "case-13",
+      "input": "A project reports unknown quota while the existing account collector has a fresh reading",
+      "expected": "Inspect the effective source, freshness, account/window identity and explicit collector choice. Do not rewrite fake balances, change ownership or clear human holds.",
+      "check": "check-04",
       "status": "authored-example"
     }
   ]

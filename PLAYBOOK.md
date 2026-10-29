@@ -1,6 +1,6 @@
 # Debug Agent playbook
 
-Version: 0.1.3 · Status: prepared; validation recorded per run.
+Version: 0.1.4 · Status: prepared; validation recorded per run.
 
 ## Goal and scope
 
@@ -26,6 +26,8 @@ Search toolbox/index.json by purpose, inspect relevant matches, reuse/adapt them
 
 ### step-02 — Trace the actual failure
 
+Read the installed target contract before classifying a pause. The task-checkpoint 0.7 procedures and examples below are historical. For 0.8 use [version compatibility](toolbox/checkpoint-compatibility.md): preserve at the chosen limit, end that run, and accept ordinary explicit continuation or a direct threshold/exhaustion choice without a quota recovery ceremony. Human holds and native permissions are independent.
+
 Write one concise problem statement: trigger → expected → observed → impact. Trace:
 user request → host delivery → effective hook registration → installed runtime/source → chat/task scope → account observations/reserve → persistent stop → checkpoint/review/owner/jobs → recovery command → attempted operation.
 
@@ -39,7 +41,7 @@ For pausing test both directions: an unrelated chat is scoped correctly while th
 
 ### step-04 — Diagnose and select the correction
 
-List the smallest set of plausible causes and one discriminating observation per cause. Mark confirmed, inferred, rejected or unknown. A stopped task with healthy usage is not sufficient evidence of a bug: persistent stops deliberately require explicit reviewed resume.
+List the smallest set of plausible causes and one discriminating observation per cause. Mark confirmed, inferred, rejected or unknown. For task-checkpoint 0.7, a stopped task with healthy usage is not sufficient evidence of a bug: its persistent stops deliberately required explicit reviewed resume. In 0.8, an old quota-stop record is historical data and does not block tools or require a review.
 
 Examine the complete recovery route. Version 0.7.1 required a pending grant to prepare a review, while healthy usage correctly rejected pre-arming a grant. The tested 0.7.2 repair allows normal prepare-review without a grant and reads the live collector source associated with the stop. It returns review.json for normal recovery and allowance-resume-review.json for a pending grant. Preparing either review leaves the pause intact until explicit reviewed resume. Verify current source/version and fresh matching windows; do not prescribe an unnecessary reserve reduction.
 
@@ -51,9 +53,11 @@ A current request to fix a specified bug normally covers necessary reversible so
 
 For live shared hook or installed-skill changes, establish that the current request includes that target, inspect exact before/after and preserve unrelated entries. Native hook trust remains the human's documented review action; never fabricate trust records. Do not disable guards, erase stops, release another owner, relabel a stopped task as unrelated or change a reserve to make a test pass.
 
-A resume is a separate task action: require the current user's explicit same-task continuation instruction and normal fresh review/lease/resource/job checks. Debugging a hook is not permission to continue the paused project's unrelated implementation. If actual hook unloading requires an app restart, save this case and give the precise user action, then await observed delivery after restart.
+A resume is a separate task action: require current same-task authority and the installed runtime's ownership/resource/job checks. Do not require a retired 0.7 review under task-checkpoint 0.8. Debugging a hook is not permission to continue the paused project's unrelated implementation. If actual hook unloading requires an app restart, save this case and give the precise user action, then await observed delivery after restart.
 
 ### step-05a — Restore a paused workflow
+
+The observation-only mode and reviewed-resume steps in this subsection describe 0.7. For 0.8, use its current commands and the compatibility guide; do not restore quota-stop enforcement.
 
 Inspect collector registrations, queued dispatch and private exchange before
 reactivation. Version 0.7.3 observation_only mode keeps quota and pause monitoring
@@ -84,7 +88,7 @@ Record failure → cause → correction → evidence in the run review. Save onl
 
 ## Examples and exceptions
 
-- A stopped task receives healthy quota: expect the stop to persist until explicit reviewed resume; investigate a recovery-command dead end rather than removing the stop.
+- On 0.7, a stopped task receives healthy quota: its stop persists until reviewed resume. On 0.8, the retired marker is data; verify ordinary tools and fresh quota without recreating that stop.
 - A long Python heredoc intended to write review.json is denied: the installed maintenance classifier rejects arbitrary code/newlines. Compare a supported exact maintenance command without executing the rejected script.
 - Another chat in the same folder inherits a pause: verify authoritative host chat identity and reviewed mapping. Unknown identity stays conservative; never manufacture a foreign mapping for same-task work.
 - An old review names a different checkpoint: preserve it as evidence and use a fresh supported review path tied to the current generation. Do not rewrite checkpoint identity to match stale evidence.
@@ -107,7 +111,7 @@ Freeze toolbox/acceptance.json for package construction. Every actual bug run al
 |---|---|---|---|
 | check-01 | Correct manual case scope and authority | User request and actual task identity | Intake and source review |
 | check-02 | Evidence distinguishes cause, hypothesis and verified correction | Reproduction, original trigger, relevant regression | Before/after results or explicit partial |
-| check-03 | Persistent stops and normal recovery are distinguished | Existing checkpoint regression and isolated recovery fixture | Executed results |
+| check-03 | Installed-version quota behavior and legitimate human holds are distinguished | Existing checkpoint regression and isolated recovery fixture | Executed results |
 | check-04 | Identity, ownership, jobs and freshness remain valid | Installed source contracts and adversarial cases | Case responses and anchors |
 | check-05 | Live user state and execution limits are respected | Protected-state hashes and action receipts | Preservation and configuration evidence |
 | check-06 | Complete reviews and durable inventory | Every review field and Agent Forge audit | Review and audit result |

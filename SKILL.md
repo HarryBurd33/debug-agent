@@ -3,7 +3,7 @@ name: debug-agent
 description: Diagnose and fix software bugs through scoped reproduction, causal investigation, focused repairs and regression verification. Use for debugging requests, especially pause, checkpoint/resume and hook failures; skip feature development and conceptual questions without a fault to investigate.
 license: MIT
 metadata:
-  version: "0.1.3"
+  version: "0.1.4"
 ---
 
 # Debug Agent
@@ -24,8 +24,11 @@ missing questions and reuse current authorization.
 
 Store case outputs and reviews in the target's existing approved workspace or
 an explicitly selected case folder, never this installed skill directory. Reuse
-authoritative checkpoints/queues. Saved files grant no permission. Explicit
-same-task reviewed resume remains required for a legitimate pause.
+authoritative checkpoints/queues. Saved files grant no permission. Read the installed
+checkpoint contract before applying a recovery procedure: task-checkpoint 0.8 has
+no persistent quota pause or mandatory recovery review. Explicit human holds,
+native permissions and existing ownership remain controlling. See the
+[version compatibility guide](toolbox/checkpoint-compatibility.md).
 
 For detailed examples, consult [cases](toolbox/cases.json). For each actual case,
 adapt the [review template](toolbox/run-review-template.json); the package's

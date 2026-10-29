@@ -17,3 +17,7 @@ The documented clone layout is checked in a temporary installation, including
 required resources, local Markdown links, JSON parsing and a fast-forward update.
 The Windows instructions use the same directory layout; native Windows execution
 was not tested here. This packaging check does not run a debugging model task.
+
+## 0.1.4 compatibility update
+
+The package now routes recovery through the installed checkpoint contract. Historical 0.7 examples are labelled; 0.8 does not acquire a persistent quota pause or mandatory review from those examples. Current human holds, permissions and ownership stay controlling. The compatibility resource is indexed and locally linked. JSON, inventory hashes, Markdown links and skill frontmatter are checked. These are packaging and instruction checks, not an independent model-behavior evaluation. No private incident records or chat identifiers are published.

@@ -2,7 +2,8 @@
 
 A globally installable Codex skill that scopes bugs, reproduces failures,
 identifies causes, applies authorized focused repairs and verifies regressions.
-Includes pause, checkpoint/resume and hook debugging workflows.
+Includes pause, checkpoint/resume and hook debugging workflows. Version 0.1.4
+distinguishes task-checkpoint 0.8 direct limits from historical 0.7 pause recovery.
 
 ## Install for your user
 
