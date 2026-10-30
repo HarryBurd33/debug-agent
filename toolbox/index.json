@@ -315,7 +315,7 @@
       "purpose": "Select the installed checkpoint recovery contract and distinguish quota limits from human holds",
       "kind": "reference",
       "location": "toolbox/checkpoint-compatibility.md",
-      "version": "sha256:4334493885ed25191acf1ca31b0f0a19b37a86cfd609460626d115e7518bfa39",
+      "version": "sha256:078d7eae610cc1589d1fd6aa99e062e59a169e021016185d724068f7470ccbe3",
       "input_contract": "Current user authority, installed version, selected observations and ownership",
       "output_contract": "Version-specific diagnosis; no new permissions or resumption authority",
       "dependencies": [],
